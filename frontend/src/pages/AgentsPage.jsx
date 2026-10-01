@@ -1,10 +1,23 @@
 import "./AgentsPage.css";
+import headerImage from "../assets/header.png";
+import features1 from "../assets/features1.png";
+import features2 from "../assets/features2.png";
+import features3 from "../assets/features3.png";
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import icon4 from "../assets/icon4.png";
+import icon5 from "../assets/icon5.png";
+import icon6 from "../assets/icon6.png";
 
 export default function AgencyPage() {
   return (
     <div className="page">
 
-      <header className="hero">
+      <header
+        className="hero"
+        style={{ "--hero-image": `url(${headerImage})` }}
+      >
         <div className="container">
 
           <nav className="nav">
@@ -56,9 +69,11 @@ export default function AgencyPage() {
 
             <article className="feature-card">
 
-              <div className="feature-icon">
-                01
-              </div>
+              <img
+                className="feature-icon"
+                src={features1}
+                alt=""
+              />
 
               <h3>
                 Маркетинговая стратегия
@@ -74,9 +89,11 @@ export default function AgencyPage() {
 
             <article className="feature-card">
 
-              <div className="feature-icon">
-                02
-              </div>
+              <img
+                className="feature-icon"
+                src={features2}
+                alt=""
+              />
 
               <h3>
                 Разработка сайтов
@@ -92,9 +109,11 @@ export default function AgencyPage() {
 
             <article className="feature-card">
 
-              <div className="feature-icon">
-                03
-              </div>
+              <img
+                className="feature-icon"
+                src={features3}
+                alt=""
+              />
 
               <h3>
                 SEO-продвижение
@@ -143,9 +162,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                S
-              </div>
+              <img
+                className="service-icon"
+                src={icon1}
+                alt=""
+              />
 
               <h3>
                 Стратегия
@@ -160,9 +181,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                M
-              </div>
+              <img
+                className="service-icon"
+                src={icon2}
+                alt=""
+              />
 
               <h3>
                 Маркетинг
@@ -177,9 +200,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                D
-              </div>
+              <img
+                className="service-icon"
+                src={icon3}
+                alt=""
+              />
 
               <h3>
                 Технологии
@@ -194,9 +219,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                A
-              </div>
+              <img
+                className="service-icon"
+                src={icon4}
+                alt=""
+              />
 
               <h3>
                 Реклама
@@ -211,9 +238,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                B
-              </div>
+              <img
+                className="service-icon"
+                src={icon5}
+                alt=""
+              />
 
               <h3>
                 Бренд
@@ -228,9 +257,11 @@ export default function AgencyPage() {
 
             <article className="service-item">
 
-              <div className="service-icon">
-                SEO
-              </div>
+              <img
+                className="service-icon"
+                src={icon6}
+                alt=""
+              />
 
               <h3>
                 SEO
