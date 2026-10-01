@@ -33,6 +33,8 @@
   align-items: center;
   justify-content: space-between;
 
+  gap: 22px;
+
   padding: 24px 0;
 }
 
@@ -51,6 +53,8 @@
   align-items: center;
 
   gap: 28px;
+
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -63,6 +67,77 @@
 
 .nav-links a:hover {
   color: #ffffff;
+}
+
+.account-button {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.account-button:hover {
+  border-color: rgba(255, 255, 255, 0.82);
+
+  background: rgba(255, 255, 255, 0.16);
+
+  transform: translateY(-1px);
+}
+
+.account-icon {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+
+  display: block;
+}
+
+.account-icon::before,
+.account-icon::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border: 2px solid currentColor;
+}
+
+.account-icon::before {
+  top: 1px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.account-icon::after {
+  bottom: 1px;
+
+  width: 17px;
+  height: 9px;
+
+  border-radius: 11px 11px 4px 4px;
 }
 
 .hero-content {
@@ -363,6 +438,11 @@
 
   .nav-links {
     display: none;
+  }
+
+  .account-button {
+    width: 40px;
+    height: 40px;
   }
 
   .logo {

@@ -10,7 +10,7 @@ import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
 
-export default function AgencyPage() {
+export default function AgencyPage({ onAccountClick }) {
   return (
     <div className="page">
 
@@ -31,6 +31,16 @@ export default function AgencyPage() {
               <a href="#about">О нас</a>
               <a href="#contacts">Контакты</a>
             </div>
+
+            <button
+              className="account-button"
+              type="button"
+              onClick={onAccountClick}
+              aria-label="Личный кабинет"
+              title="Личный кабинет"
+            >
+              <span className="account-icon" aria-hidden="true" />
+            </button>
 
           </nav>
 
